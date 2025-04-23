@@ -10,7 +10,7 @@ db_password=$3
 sudo systemctl status docker &>/dev/null || sudo systemctl start docker
 
 # Check container status (try the following cmds on terminal)
-# docker inspect --formate{{json .State.Running}} jrvs-psql
+# docker inspect --format{{json .State.Running}} jrvs-psql
 docker inspect jrvs-psql
 container_status=$?
 
@@ -43,6 +43,19 @@ case $cmd in
   if [ $container_status -ne 0 ]; then
     echo "Container does not exist"
     exit 1
+  fi
+
+  # Store boolean value inside of variable
+  container_running=$(docker inspect --format='{{json .State.Running}}' jrvs-psql)
+
+  # Check if the container is running using boolean
+  if [[ $container_running == "true" && "$cmd" == "start" ]]; then
+    echo "Docker container is already running"
+    exit 1;
+  fi
+  if [[ $container_running == "false" && "$cmd" == "stop" ]]; then
+    echo "Docker container is already not running"
+    exit 1;
   fi
 
   # Start or stop the container
