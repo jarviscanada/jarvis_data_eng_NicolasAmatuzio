@@ -44,6 +44,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NicolasAma
 
 ## Miscellaneous
 - Basketball: I often go to the park with my friends on my off time and play basketball, nothing too serious but it's always a fun time.
-- Gunpla / Model Kits: I really enjoy building and customizing models preferably anything from Digimon, Yu-Gi-Oh, or Armored Core, but honestly if I like the design, I'll build it.
+- Gunpla / Model Kits: I really enjoy building and customizing model kits. I find it very relaxing. I prefer building anything from Digimon, Yu-Gi-Oh, or Armored Core, but honestly if I like the design, I'll build it.
 - Competitive gaming: Love fighting games and the complexities that come with learning them. Tekken and Street Fighter are my preferred games.
 - Puzzle games: I always enjoy using my brain to think of abstract solutions, which is why I love puzzle games. Baba is you is one of the greatest puzzle games ever. It takes a simple concept and creates some of the most intricate puzzles I've ever had to solve.
