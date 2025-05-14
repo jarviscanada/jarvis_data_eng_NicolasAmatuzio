@@ -4,9 +4,9 @@ Hey hey people, I'm Nicolas Amatuzio! I'm a graduate from Seneca's Bachelor of S
 
 ## Skills
 
-**Proficient:** Java, Python, Javascript, HTML/CSS, Linux/Bash, RDBMS/SQL, Agile/Scrum, Git, Figma, Trello
+**Proficient:** Java, Python, Javascript, HTML/CSS, Linux/Bash, Microsoft Azure, RDBMS/SQL, Agile/Scrum, Docker, Git, GitHub, Figma, Trello, MongoDB
 
-**Competent:** CI/CD, Typescript, Microsoft Azure, AWS, Google Cloud Platform, Angular
+**Competent:** CI/CD, Jest, NumPy, Pandas, BeautifulSoup, Typescript, AWS, Google Cloud Platform, Angular
 
 **Familiar:** C/++, C#, .NET, Burp Suite, Express JS, Handlebars
 
@@ -15,40 +15,24 @@ Hey hey people, I'm Nicolas Amatuzio! I'm a graduate from Seneca's Bachelor of S
 Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio)
 
 
-**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/linux_sql)]: The Linux cluster monitoring agent is designed to scrape hardware information to provide easily digestible usage and hardware metrics for easy data parsing. Testing was done using the -x flag on the bash command which individually prints variable definitions and shows debug echo lines. SQL debugging was done using mock data to ensure relations and integrity was to spec. Deployment was done through GitHub and the postgres docker container for the database. - ./scripts/host_usage.sh - A script that is automated using cron that scrapes necessary hardware information such as cpu, disk, and memory specs. - ./scripts/host_info.sh - A script that will run once and store information about the host in the host table. - ./scripts/psql_docker.sh - A script that will create the necessary docker container with a user generated psql sequence to store host info. - ./sql/ddl.sql - Contains sql table data and structure.
-
-**Core Java Apps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/core_java)]:
-      
-  - Twitter App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - JDBC App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-  - Grep App: Curabitur laoreet tristique leo, eget suscipit nisi. Sed in sodales ex. Maecenas vitae tincidunt dui, et eleifend quam.
-
-**Springboot App** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/springboot)]: Not Started
-
-**Python Data Analytics** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/python_data_anlytics)]: Not Started
-
-**Hadoop** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/hadoop)]: Not Started
-
-**Spark** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/spark)]: Not Started
-
-**Cloud/DevOps** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/cloud_devops)]: Not Started
+**Cluster Monitor** [[GitHub](https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio/tree/master/linux_sql)]: The Linux cluster monitoring agent is designed to scrape hardware information to provide easily digestible usage and hardware metrics for easy data parsing from multiple VMs at once. It utilizes persistent databases in order to preserve disk, cpu, and memory information from the user agent for higher level users to manage. Testing was done using regex playgrounds and bash -x to properly check outputs and variables during runtime. Deployment was done through GitHub and the postgres docker container for the database.
 
 
 ## Highlighted Projects
-**Fragments Microservice** [[GitHub](https://github.com/Namatuzio/fragments)]: Developed a microservice allowing users to upload and convert various file types to others, providing a secure file management system through AWS infrastructure. Ensured security by normalizing HTML code in files to prevent injection attacks. Deployed an AWS EC2 instance for the reliability and scalability of final production workloads. Implemented AWS Cognito for user authentication and authorization for secure access control. Utilized AWS S3 Buckets for data storage on user accounts, ensuring data integrity. Wrote comprehensive unit and integration tests using Jest to ensure functionality and code quality, maintaining a 95%+ test coverage. Maintained code quality by implementing ESLint for linting and enforcing code quality across my codebase. Developed a Docker file to containerize codebase to ensure no issues were met when deploying the microservice. Set up GitHub actions to create a CI/CD pipeline that would automatically install requirements, run unit and integration tests, and deploy the microservice to a Docker image
+**Fragments Microservice** [[GitHub](https://github.com/Namatuzio/fragments)]: Developed a microservice allowing users to upload and convert various file types to others, providing a secure file management system through AWS infrastructure. Ensured security by normalizing HTML code in files to prevent injection attacks. Deployed an AWS EC2 instance for the reliability and scalability of final production workloads. Implemented AWS Cognito for user authentication and authorization for secure access control. Utilized AWS S3 Buckets for data storage on user accounts, ensuring data integrity by following common best practices such as access control and encryption. Wrote comprehensive unit and integration tests using Jest to ensure functionality and code quality, maintaining a 95%+ test coverage. Maintained code quality by implementing ESLint for linting and enforcing code quality across my codebase. Developed a Docker file to containerize the codebase to ensure no issues were encountered when deploying the microservice. Set up GitHub actions to create a CI/CD pipeline that would automatically install requirements, run unit and integration tests, and deploy the Docker image to Docker Hub for deployment on an EC2 instance
 
-**Personal Website** [[GitHub](https://namatuzio.github.io/)]: Worked with the WebGL rendering engine 3js to create a vibrant dynamic background for my website. Created animations that play off a ray cast mouse click to allow users to interact with the background through the 3d objects. Developed interactive components such as a card component to the 'flat' portions of the site to give browsing the site a better feel. Created a secret phrase bar that allows users to edit certain aspects of the site to provide a more fun user experience in allowing users to guess what possible phrases there could be. Developed multiple shaders for objects that can be dynamically updated through the secret phrase bar. Adhered to common web development principles to make site easier to look at and read, especially on mobile devices
+**Personal Website** [[GitHub](https://namatuzio.github.io/)]: Worked with the Webgl rendering engine 3js to create a vibrant, dynamic background for my website. Created animations that play off a ray cast mouse click to allow users to interact with the background through the 3d objects. Developed interactive components such as a card component for the 'flat' portions of the site to give browsing the site a better feel. Created a secret phrase bar that allows users to edit certain aspects of the site to provide a more fun user experience in allowing users to guess what possible phrases there could be. Developed multiple shaders for objects that can be dynamically updated through the secret phrase bar. Adhered to common web development principles to make the  site easier to look at and read, especially on mobile devices
 
 
 ## Professional Experiences
 
-**DevOps Developer(I&IT), Ministry of Public and Business Service Delivery (MPBSD) (Jan 2023 - Sept 2023)**: Utilized Azure services to create a subscription management system, providing streamlined access to important information directly to managers. Worked with reducing costs of services and clutter of unused resources by 10% through flagging unused subscriptions for deletion. Utilized AI models (GPT) with data extraction libraries in Python (pandas, BeautifulSoup, NumPy) to develop a chat bot for faster onboarding by integrating information about systems, operations, and services. 
- Automated data extraction using Azure storage services and Azure Functions to give the chatbot a strong knowledge base and up-to date information. 
- Created new database operations and CRUD APIs with Azure solutions to support the integration of new services and ensure solid data management. 
- Redesigned charity hockey event website for a sleeker feel updating the responsiveness of certain react components and updating database operations to include new sponsors. 
- Coordinated a team of 4 at a Microsoft sponsored hack-a-thon and conducted user research to understand needs and challenges faced by clients, those of who are both technically literate and not, winning the category of most improved government operations 
+**DevOps Developer(I&IT), Ministry of Public and Business Service Delivery (MPBSD) (Jan 2023 - Sept 2023)**: Utilized Azure services to create a subscription management system, providing streamlined access to important information directly to managers. Worked with reducing the costs of services and the clutter of unused resources by 10% through flagging unused subscriptions for deletion. Utilized AI models (GPT) with data extraction libraries in Python (pandas, BeautifulSoup, NumPy) to develop a chatbot for faster onboarding by integrating information about systems, operations, and services. 
+ Automated data extraction using Azure storage services and Azure Functions to give the chatbot a strong knowledge base and up-to-date information. 
+ Created new database operations and CRUD APIS with Azure solutions to support the integration of new services and ensure solid data management. 
+ Redesigned charity hockey event website for a sleeker feel, updating the responsiveness of certain React components and updating database operations to include new sponsors. 
+ Coordinated a team of 4 at a Microsoft-sponsored hack-a-thon and conducted user research to understand needs and challenges faced by clients, both those who are technically literate and not, winning the category of most improved government operations 
 
-**Distribution and Logistics Database Specialist, Canada Bread Company, Limited (Mar 2021 - Apr 2025)**: Worked with logistical Oracle SQL systems to provide information to distribution planners such as volume, inventory, and other key performance indicators. Ensured maximum efficiency with the database through rigorous troubleshooting and updates. Worked with management to schedule around target KPIs. Collaborated with higher management to redesign workflows to improve efficiency of days. Underwent restructuring of workplace, assisted higher management through creating necessary diagrams to visualize changes.
+**Distribution and Logistics Database Specialist, Canada Bread Company, Limited (Mar 2021 - Apr 2025)**: Worked with logistical Oracle SQL systems to provide information to distribution planners such as volume, inventory, and other key performance indicators. Ensured maximum efficiency with the database through rigorous troubleshooting and updates. Worked with management to schedule around target KPIS. Collaborated with higher management to redesign workflows to improve efficiency of the day. Underwent restructuring of workplace, assisted higher management through creating necessary diagrams to visualize changes. 
 
 
 ## Education
@@ -56,8 +40,6 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NicolasAma
 - Scholarship (2019 - 2022)
 - President's List (2020, 2022)
 - GPA: 3.9/4.0
-
-**XYZ university (2016-2018)**, Master of Engineering, Electrical and Computer Engineering
 
 
 ## Miscellaneous
