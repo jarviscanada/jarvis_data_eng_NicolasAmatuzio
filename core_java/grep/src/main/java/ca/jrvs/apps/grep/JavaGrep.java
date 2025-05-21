@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.util.List;
 
 public interface JavaGrep {
+
     /**
      * Top level search workflow
      * @throws IOException
