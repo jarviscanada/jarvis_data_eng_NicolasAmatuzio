@@ -5,17 +5,14 @@ import com.sun.org.slf4j.internal.LoggerFactory;
 import jdk.jfr.internal.tool.Main;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 import java.io.File;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class JavaGrepImp implements JavaGrep {
 
-    final Logger logger = LoggerFactory.getLogger(JavaGrepImp.class);
+    final Logger logger = LoggerFactory.getLogger(JavaGrep.class);
 
     private String regex;
     private String outFile;
@@ -32,11 +29,19 @@ public class JavaGrepImp implements JavaGrep {
 
     @Override
     public List<File> listFiles(String rootDir) {
-        File[] files = new File (rootDir).listFiles();
-        if (files == null) {
-            return Collections.emptyList();
+        logger.debug("Listing all files in root dir: " + rootDir);
+        List<File> files = new ArrayList<>();
+        File[] dir = new File(rootDir).listFiles();
+
+        for (File f : dir) {
+            logger.debug(f.getName());
+            if (f.isDirectory()) {
+                files.addAll(listFiles(f.getAbsolutePath()));
+            } else {
+                files.add(f);
+            }
         }
-        return Arrays.asList(files);
+        return files;
     }
 
     @Override
@@ -69,27 +74,27 @@ public class JavaGrepImp implements JavaGrep {
 
     @Override
     public String getRootPath() {
-        return "";
+        return this.rootPath;
     }
 
     @Override
     public void setRootPath(String rootPath) {
-
+        this.rootPath = rootPath;
     }
 
     @Override
     public String getRegex() {
-        return "";
+        return this.regex;
     }
 
     @Override
     public void setRegex(String regex) {
-
+        this.regex = regex;
     }
 
     @Override
     public String getOutFile() {
-        return "";
+        return this.outFile;
     }
 
     @Override
