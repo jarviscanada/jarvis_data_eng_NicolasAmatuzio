@@ -7,17 +7,13 @@ import java.io.*;
 import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
-import java.util.function.Consumer;
 import java.util.stream.Collectors;
-import java.util.stream.DoubleStream;
-import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
-public class JavaGrepLambdaImp extends JavaGrepImp {
+public class JavaGrepLambdaImp extends JavaGrepImp implements JavaGrepLambda {
 
-    private static final Logger logger = LoggerFactory.getLogger(JavaGrepImp.class);
+    private static final Logger logger = LoggerFactory.getLogger(JavaGrepLambdaImp.class);
 
     private String regex;
     private String outFile;
@@ -26,18 +22,11 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     @Override
     public void process() throws IOException {
         // Used to store matches
-        List<String> lines = listFiles(getRootPath())
+        List<String> lines = listFilesLazy(getRootPath())
                 // create a stream of files, flatMap will create a flattened list of strings
-                .stream()
-                .flatMap(file -> {
-                    try{
-                        return Files.lines(file.toPath());
-                    } catch (IOException e) {
-                        logger.error(e.getMessage());
-                    }
-                    return Stream.empty();
+                .flatMap(this::readLinesLazy)
                 //filter will pattern match and collect will store filtered lines into a list
-                }).filter(this::containsPattern).collect(Collectors.toList());
+                .filter(this::containsPattern).collect(Collectors.toList());
         // Write to outfile
         this.WriteToFile(lines);
     }
@@ -62,35 +51,36 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
     }
 
     @Override
-    public void WriteToFile(List<String> lines) {
-        File f = new File(this.outFile);
-        if(f.getParentFile() != null) {
-            if(!f.getParentFile().exists()) {
-                f.getParentFile().mkdirs();
-            }
+    public Stream<File> listFilesLazy(String rootDir) {
+        logger.debug("Listing all files in root dir: " + rootDir);
+        File[] dir = new File(rootDir).listFiles();
+
+        if(dir == null){
+            return Stream.empty();
         }
 
+        return Stream.of(dir).flatMap(f -> {
+            if(f.isDirectory()){
+                return listFilesLazy(f.getAbsolutePath());
+            } else {
+                return Stream.of(f);
+            }
+        });
+    }
+
+    @Override
+    public Stream<String> readLinesLazy(File inputFile) {
         try {
-            FileWriter fw = new FileWriter(this.outFile);
-            lines.stream()
-                .map(l -> l + System.lineSeparator())
-                .forEach(l -> {
-                    try{
-                        fw.write(l);
-                    } catch(IOException e){
-                        logger.error(e.getMessage());
-                    }
-                });
-            fw.close();
-            logger.debug("Completed write to file {}", this.outFile);
+            logger.debug("Reading file: " + inputFile.getAbsolutePath());
+            return  Files.lines(inputFile.toPath());
         } catch (IOException e) {
             logger.debug(e.getMessage());
+            return Stream.empty();
         }
     }
 
-
     public static void main(String[] args) {
-        if (args.length != 3) {
+       if (args.length != 3) {
             throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
         }
 
@@ -105,5 +95,4 @@ public class JavaGrepLambdaImp extends JavaGrepImp {
             logger.error(e.getMessage());
         }
     }
-
 }
