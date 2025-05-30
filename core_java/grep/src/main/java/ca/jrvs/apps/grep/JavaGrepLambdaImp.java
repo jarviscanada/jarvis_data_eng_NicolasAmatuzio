@@ -1,5 +1,6 @@
 package ca.jrvs.apps.grep;
 
+import org.apache.log4j.BasicConfigurator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -83,6 +84,9 @@ public class JavaGrepLambdaImp extends JavaGrepImp implements JavaGrepLambda {
        if (args.length != 3) {
             throw new IllegalArgumentException("USAGE: JavaGrep regex rootPath outFile");
         }
+
+        //Use default logger config
+        BasicConfigurator.configure();
 
         JavaGrepLambdaImp javaGrepLambdaImp = new JavaGrepLambdaImp();
         javaGrepLambdaImp.setRegex(args[0]);
