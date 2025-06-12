@@ -12,7 +12,7 @@ The CTO decided to engage with Jarvis consulting software and data engineering s
 
 ### Data Analytics and Wrangling
 
-To access the Jupyter notebook for data analytics and wrangling, click [here](./retail_data_analytics_wrangling.ipynb).
+To access the Jupyter notebook for data analytics and wrangling, click [here](./data/retail_data_analytics_wrangling.ipynb).
 
 The data is used for
 1. **Customer Segmentation**: Grouping customers based on their purchasing behavior to identify high-value segments.
