@@ -1,5 +1,4 @@
 # Introduction
-(50-100 words)
 This is a simple grep application implemented in Java using Maven. 
 It searches for specific patterns within text files and outputs the matching lines efficiently. 
 The application uses core Java and Java Lambdas and streams for processing text data. 
@@ -23,7 +22,6 @@ ${regex} ${rootPath} /out/${outFile}
 
 # Implemenation
 ## Pseudocode
-write `process` method pseudocode.
 
 ```java
 public void process() throws IOException{
@@ -34,14 +32,14 @@ public void process() throws IOException{
 }
 ```
 
+`outFile` does not have to exist, the creation of the required directory is handled seamlessly.
+
 ## Performance Issue
-(30-60 words)
+
 A problem with implementing grep is working with 1. large files and 2. low memory environments. 
 The most effective solution to this problem was implementing lazy loading with streams to process data in easily processable chunks.
 
 # Test
-How did you test your application manually? 
-(e.g. prepare sample data, run some test cases manually, compare result)
 
 Testing was done through IntelliJ IDEA by setting default commands to run the Java file with the following parameters:
 ```bash
