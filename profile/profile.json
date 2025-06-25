@@ -15,7 +15,7 @@
   "github_repo_root_url": "https://github.com/jarviscanada/jarvis_data_eng_NicolasAmatuzio",
   "highlighted_projects": [
     {
-      "description": "Developed a microservice allowing users to upload and convert various file types to others, providing a secure file management system through AWS infrastructure. Ensured security by normalizing HTML code in files to prevent injection attacks. Deployed an AWS EC2 instance for the reliability and scalability of final production workloads. Implemented AWS Cognito for user authentication and authorization for secure access control. Utilized AWS S3 Buckets for data storage on user accounts, ensuring data integrity by following common best practices such as access control and encryption. Wrote comprehensive unit and integration tests using Jest to ensure functionality and code quality, maintaining a 95%+ test coverage. Maintained code quality by implementing ESLint for linting and enforcing code quality across my codebase. Developed a Docker file to containerize the codebase to ensure no issues were encountered when deploying the microservice. Set up GitHub actions to create a CI/CD pipeline that would automatically install requirements, run unit and integration tests, and deploy the Docker image to Docker Hub for deployment on an EC2 instance",
+      "description": "Developed a microservice allowing users to upload and convert various file types to others using AWS infrastructure. Ensured security by normalizing HTML code in files to prevent injection attacks. Deployed an AWS EC2 instance for the reliability and scalability of final production workloads. Implemented AWS Cognito for user authentication and authorization for secure access control. Utilized AWS S3 Buckets for data storage on user accounts, ensuring data integrity by following common best practices such as access control and encryption. Wrote comprehensive unit tests in jest to achieve a 95%+ codebase coverage. Leveraged ESLint to maintain code quality and normalization. Wrote a dockerfile to containerize fragments and uploaded the image to docker hub for easy CI/CD integration. Set up a CI/CD pipeline through GitHub actions to run necessary tests and deploy the app on an EC2 instance.",
       "git_url": "https://github.com/Namatuzio/fragments",
       "name": "Fragments Microservice"
     },
@@ -27,19 +27,29 @@
   ],
   "jarvis_projects": [
     {
-      "description": "The Linux cluster monitoring agent is designed to scrape hardware information to provide easily digestible usage and hardware metrics for easy data parsing from multiple VMs at once. It utilizes persistent databases in order to preserve disk, cpu, and memory information from the user agent for higher level users to manage. Testing was done using regex playgrounds and bash -x to properly check outputs and variables during runtime. Deployment was done through GitHub and the postgres docker container for the database.",
+      "description": "Developed a monitoring agent to collect VM usage metrics and store it inside of a PSQL database. Utilized persistent databases in order to preserve disk, cpu, and memory information from the user agent for higher level users to manage. Deployed through GitHub and the postgres docker container for the database.",
       "git_url": "/linux_sql",
       "name": "Cluster Monitor"
+    },
+    {
+      "description": "Developed a simple grep application in java leveraging lambda functions and streams to enable functionalities in a low memory environment. Implemented recursive search for searching entire directories and enabled users to set a custom output directory. Built with Maven, utilized log4j to log errors and debug info, and containerized using docker, with the image being uploaded to docker hub.",
+      "git_url": "/core_java/grep",
+      "name": "Java Grep App"
+    },
+    {
+      "description": "Developed a proof of concept for a UK-based wholesaler, London Gift Shop (LGS). Leveraged Jupyter Notebook was used for data exploration, Python libraries such as pandas, numpy, matplolib for data wrangling and visualization, and leveraging common analytical techniques like RFM to create data insights into customer behaviour.",
+      "git_url": "/python_data_wrangling",
+      "name": "Python Data Analytics"
     }
   ],
   "name": "Nicolas Amatuzio",
   "others": [
     {
       "bullets": [
-        "Basketball: I often go to the park with my friends on my off time and play basketball, nothing too serious but it's always a fun time.",
+        "Basketball: I somtimes go to the park with my friends on my off time and play basketball, nothing too serious but it's always a fun time.",
         "Gunpla / Model Kits: I really enjoy building and customizing model kits. I find it very relaxing. I prefer building anything from Digimon, Yu-Gi-Oh, or Armored Core, but honestly if I like the design, I'll build it.",
         "Competitive gaming: Love fighting games and the complexities that come with learning them. Tekken and Street Fighter are my preferred games.",
-        "Puzzle games: I always enjoy using my brain to think of abstract solutions, which is why I love puzzle games. Baba is you is one of the greatest puzzle games ever. It takes a simple concept and creates some of the most intricate puzzles I've ever had to solve."
+        "Puzzle games: I always enjoy using my brain to think of abstract solutions, which is why I love puzzle games, specifically those that take a simple concept and stretch to be as complex as possible, such as Baba is You, and Manifold Garden."
       ],
       "title": "Activities/Hobbies"
     }
@@ -95,5 +105,5 @@
       "MongoDB"
     ]
   },
-  "summary": "A Graduate from Seneca's software development degree program which equipped me with a variety of skills which I've been able to apply in the real world. Worked for the municipal government (MPBSD DevOps) as a DevOps developer, leveraging my skills in python data analytics and navigating cloud computing technologies to find cost-saving strategies or create meaningful solutions across multiple teams. Provided technical and operational support to supervisors at Canada bread, leading a team of 15 individuals when needed and providing key performance metrics to plan ahead for days. Previously developed a microservice in AWS leveraging S3 buckets for storage, EC2 for scalability, cognito for authentication, and docker for deployment. Proven experience in a broad spectrum of development such as fullstack development and data analysis with a high regard for communication, teamwork, and delivering efficient solutions in collaborative environments."
+  "summary": "A Graduate from Seneca's software development degree program which equipped me with a variety of skills which I've been able to apply in the real world. Worked for the provincial government (MPBSD DevOps) as a DevOps developer, leveraging my skills in python data analytics and navigating cloud computing technologies to find cost-saving strategies or create meaningful solutions across multiple teams. Provided technical and operational support to supervisors at Canada bread, leading a team of 15 individuals when needed and providing key performance metrics to plan ahead for days. Previously developed a microservice in AWS leveraging S3 buckets for storage, EC2 for scalability, cognito for authentication, and docker for deployment. Proven experience in a broad spectrum of development such as fullstack development and data analysis with a high regard for communication, teamwork, and delivering efficient solutions in collaborative environments."
 }
