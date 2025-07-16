@@ -9,9 +9,11 @@ The full notebook can be found [here](notebook/retail_data_analytics_wrangling.i
 
 The dataset used in thhis project contains key metrics such all customer orders, quantities, prices, etc. which has been extensively processed to find key performance indicators that allow customers to be grouped into special categories for targeted marketing campaigns. PySpark on Databricks was utilized for data processing, aggregation, and analysis to efficiently query data.
 
+![architecture](./assets/architecture_diagram.png)
+
 # Zeppelin and Hadoop Implementation
-The dataset used in this project contains [brief description of dataset]. The analytics includes data processing and transformations using PySpark in Zeppelin on Hadoop.
+We utilized Hive and PySpark to perform analytics on a WDI dataset and visualize the results in Apache Zeppelin notebook running on a Google Cloud Platform Hadoop cluster which can be found [here](notebook\WDI Data Analytics.json)
 
 # Future Improvement
-- List at least three future improvements for this project
+- List at least three future improvements for this project 
  
