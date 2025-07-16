@@ -11,9 +11,12 @@ The dataset used in thhis project contains key metrics such all customer orders,
 
 ![architecture](./assets/architecture_diagram.png)
 
-# Zeppelin and Hadoop Implementation
-We utilized Hive and PySpark to perform analytics on a WDI dataset and visualize the results in Apache Zeppelin notebook running on a Google Cloud Platform Hadoop cluster which can be found [here](notebook\WDI Data Analytics.json)
+# Zeppelin and Hadoop Implementationgit st
+We utilized Hive and PySpark to perform analytics on a WDI dataset and visualize the results in Apache Zeppelin notebook running on a Google Cloud Platform Hadoop cluster which can be found [here](notebook/WDIDataAnalytics.json)
+
+![architecture2](./assets/sparkarchitecture.png)
 
 # Future Improvement
-- List at least three future improvements for this project 
- 
+1. Optimizing Data storage and Processing
+2. Scalability and Performance Enhancements
+3. Advanced Data Analytics and Machine Learning
