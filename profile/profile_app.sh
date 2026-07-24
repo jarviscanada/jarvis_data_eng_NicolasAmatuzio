@@ -1,9 +1,6 @@
 #!/bin/bash
-
 #cd to script dir
-cd "$(dirname "$0")"
-
-function init() {
+function init(){
   echo "---- Downloading sample profile.yaml file ----"
   chmod +x $0
   wget https://raw.githubusercontent.com/jarviscanada/jarvis_profile_builder/develop/profile.yaml -O profile.yaml
@@ -40,7 +37,7 @@ function get_profile_name() {
 
 function yaml_to_json() {
   echo "---- Coverting profile YAML to JSON ----"
-  docker run --rm -v "${PWD}":/workdir mikefarah/yq:3.3.4 yq r -j --prettyPrint profile.yaml > profile.json
+  docker run --rm -v "${PWD}":/workdir mikefarah/yq:3.3.4 yq r -j --prettyPrint ./profile.yaml > ./profile.json
   check_status $?
 }
 
