@@ -1,14 +1,14 @@
 # Nicolas Amatuzio . Jarvis Consulting
 
-I am graduate from Seneca's software development degree program which equipped me with a variety of skills which I've been able to apply in the real world. I have previously worked for the Ontario government (MPBSD) as a developer and DevOps specialist, leveraging my skills in full-stack, python data analytics and navigating cloud computing technologies to find cost-saving strategies or create meaningful solutions across multiple teams. I have a strong background in leadership through my time at Canada Bread, leading a team of 15 individuals when needed and providing key performance metrics to plan ahead for days. I previously developed a microservice in AWS leveraging S3 buckets for storage, EC2 for scalability, cognito for authentication, and docker for deployment. I am an unrelentingly optimistic developer with a proven experience in a broad spectrum of development such as fullstack development and data analysis with a high regard for communication, teamwork, and delivering efficient solutions in collaborative environments.
+I am graduate from Seneca's software development degree program which equipped me with a variety of skills which I've been able to apply in the real world. I am currently working for CIBC and have previously worked for the Ontario government (MPBSD) as a developer and DevOps specialist, leveraging my skills in full-stack, python data analytics and navigating cloud computing technologies to find cost-saving strategies or create meaningful solutions across multiple teams. I have a strong background in leadership through my time at Canada Bread, leading a team of 15 individuals when needed and providing key performance metrics to plan ahead for days. I previously developed a microservice in AWS leveraging S3 buckets for storage, EC2 for scalability, cognito for authentication, and docker for deployment. I am an unrelentingly optimistic developer with a proven experience in a broad spectrum of development such as fullstack development and data analysis with a high regard for communication, teamwork, and delivering efficient solutions in collaborative environments.
 
 ## Skills
 
-**Proficient:** Java, Python, Javascript, HTML/CSS, Linux/Bash, Microsoft Azure, RDBMS/SQL, Agile/Scrum, Docker, Git, GitHub, Figma, Trello, MongoDB
+**Proficient:** C#, Python, Javascript, HTML/CSS, Linux/Bash, Microsoft Azure, RDBMS/SQL, Agile/Scrum, Docker, Git, GitHub, Figma, Trello, MongoDB, CI/CD
 
-**Competent:** CI/CD, Jest, NumPy, Pandas, BeautifulSoup, Typescript, AWS, Google Cloud Platform, Angular
+**Competent:** Jest, NumPy, Pandas, BeautifulSoup, Typescript, AWS, Google Cloud Platform, Angular
 
-**Familiar:** C/++, C#, .NET, Burp Suite, Express JS, Handlebars
+**Familiar:** C/++, Java, .NET, Burp Suite, Express JS, Handlebars
 
 ## Jarvis Projects
 
@@ -30,13 +30,15 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NicolasAma
 
 ## Professional Experiences
 
+**Jr. Full-Stack Developer, CIBC (Aug 2025 - Present)**: Worked with Azure cloud technologies to create unique solutions to support multiple LOBs Migrated outdated apps to newer .net versions, cleaning up old dependencies and adding newer ones. Developed and deployed multiple APIs and scripts that made it easier for non-technical users to execute datafactory pipelines, grant permissions to users, and run container app jobs. Supported other teams through IT & support domain, finding the root of their issues and leveraging previous experiences to find solutions in a timely manner. Ensured projects were up to CIBC standards through peer review and by leveraging best practices. Built new solutions hosted on different platforms from older on prem code bases, requiring migration and reintegration to newer versions of libraries and standards. Deployed multiple pipelines to azure devops that worked to validate, deploy, and build services to azure. Worked with modern azure AI components to refine a chatbot that allows users to feed data from documents, data, and wiki pages on a per team basis. 
+
 **DevOps Developer(I&IT), Ministry of Public and Business Service Delivery (MPBSD) (Jan 2023 - Sept 2023)**: Played multiple roles across DevOps, full-stack, and data engineering in a cross-functional team, helping deliver multiple high-impact projects that exceeded expectations. Utilized Azure services to create a subscription management system, providing streamlined access to important information directly to managers. Worked with reducing the costs of services and the clutter of unused resources by 10% through flagging unused subscriptions for deletion. Utilized AI models (GPT) with data extraction libraries in Python (pandas, BeautifulSoup, NumPy) to develop a chatbot for faster onboarding by integrating information about systems, operations, and services. 
  Automated data extraction using Azure storage services and Azure Functions to give the chatbot a strong knowledge base and up-to-date information. 
  Created new database operations and CRUD APIS with Azure solutions to support the integration of new services and ensure solid data management. 
  Redesigned charity hockey event website for a sleeker feel, updating the responsiveness of certain React components and updating database operations to include new sponsors. 
  Coordinated a team of 4 at a Microsoft-sponsored hack-a-thon and conducted user research to understand needs and challenges faced by clients, both those who are technically literate and not, winning the category of most improved government operations. 
 
-**Distribution and Logistics Database Specialist, Canada Bread Company, Limited (Mar 2021 - Apr 2025)**: Worked with logistical Oracle SQL systems to provide information to distribution planners such as volume, inventory, and other key performance indicators. Ensured maximum efficiency with the database through rigorous troubleshooting and updates. Worked with management to schedule around target KPIS. Collaborated with higher management to redesign workflows to improve efficiency of the day. Underwent restructuring of workplace, assisted higher management through creating necessary diagrams to visualize changes. 
+**Shipping Associate, Canada Bread Company, Limited (Mar 2021 - Apr 2025)**: Worked with logistical Oracle SQL systems to provide information to distribution planners such as volume, inventory, and other key performance indicators. Worked with management to schedule around target KPIS and ensure efficiency. Collaborated with higher management to redesign workflows to improve efficiency of the day. Underwent restructuring of workplace, assisted higher management through creating necessary diagrams to visualize changes. Contributed additional hours when needed to get ahead of plans and ensure days finished on-time. 
 
 
 ## Education
@@ -49,5 +51,4 @@ Project source code: [https://github.com/jarviscanada/jarvis_data_eng_NicolasAma
 ## Miscellaneous
 - Basketball: I somtimes go to the park with my friends on my off time and play basketball, nothing too serious but it's always a fun time and it keeps me active and gives me an activity that I can always improve upon.
 - Gunpla / Model Kits: I really enjoy building and customizing model kits. I find it very relaxing and love how much of a time sink it can be in detailing, painting, and making them look as good as possible. I prefer building anything from Digimon, Yu-Gi-Oh, or Armored Core, but honestly if I like the design, I'll build it.
-- Competitive gaming: Love fighting games and the complexities that come with learning them. Tekken and Street Fighter are my preferred games.
 - Puzzle games: I always enjoy using my brain to think of abstract solutions, which is why I love puzzle games, specifically those that take a simple concept and stretch to be as complex as possible, such as Baba is You, and Manifold Garden.
